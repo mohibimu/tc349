@@ -20,6 +20,10 @@ img{
 }
 h1{
 	text-align:center;
+	margin:0;
+	padding-top:16px;
+	padding-bottom:16px;
+	
 }
 header h1{
 	font-family:Exo;
@@ -87,6 +91,8 @@ article{
 	margin-right:24px;
 	padding: 0;
 	width:720px;
+
+	
 }
 
 #sidebar{
@@ -120,6 +126,9 @@ article{
 #mainWrap{
 	width:412px;
 	margin:0 auto;
+}
+#mainWrap p:last-child{
+	border-bottom:solid 5px #f1f1f1;	
 }
 
 header{
