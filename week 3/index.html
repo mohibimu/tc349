@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Moonygram</title>
+<link type="text/css" rel="stylesheet" href="style.css"/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Damion' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<div class="wrapper">
+    	
+        <div id="header">
+        	<h2>MoonyGram</h2>
+        </div>
+        
+        <div id="main">
+        	<header>
+            	<h1>Personal Pics</h1>
+            </header>
+            <div class="imageBoxContainer">
+            
+            	<div class="imageBox">
+                	<img src="http://placehold.it/246x246">
+                    <div class="imageBoxText">
+                    	<h5>Image Title</h5>
+                        <p>Image Location</p>
+                    </div>
+                </div>
+                <div class="imageBox">
+                	<img src="http://placehold.it/246x246">
+                    <div class="imageBoxText">
+                    	<h5>Image Title</h5>
+                        <p>Image Location</p>
+                    </div>
+                </div>
+                <div class="imageBox">
+                	<img src="http://placehold.it/246x246">
+                    <div class="imageBoxText">
+                    	<h5>Image Title</h5>
+                        <p>Image Location</p>
+                    </div>
+                </div>
+                <div class="imageBox">
+                	<img src="http://placehold.it/246x246">
+                    <div class="imageBoxText">
+                    	<h5>Image Title</h5>
+                        <p>Image Location</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            <!--/*****End imageBoxContainer*******/-->    
+            </div>
+            
+            <div class="imageBoxContainer">
+            
+            	<div class="imageBox">
+                	<img src="http://placehold.it/246x246">
+                    <div class="imageBoxText">
+                    	<h5>Image Title</h5>
+                        <p>Image Location</p>
+                    </div>
+                </div>
+                <div class="imageBox">
+                	<img src="http://placehold.it/246x246">
+                    <div class="imageBoxText">
+                    	<h5>Image Title</h5>
+                        <p>Image Location</p>
+                    </div>
+                </div>
+                <div class="imageBox">
+                	<img src="http://placehold.it/246x246">
+                    <div class="imageBoxText">
+                    	<h5>Image Title</h5>
+                        <p>Image Location</p>
+                    </div>
+                </div>
+                <div class="imageBox">
+                	<img src="http://placehold.it/246x246">
+                    <div class="imageBoxText">
+                    	<h5>Image Title</h5>
+                        <p>Image Location</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            <!--/******End imageBoxContainer******/-->  
+			</div>
+            <div class="clearfix"></div>
+            
+        <!--/******End main******/-->
+        </div>
+        
+        <div id="footer" class="clearfix"><p>MoonyGram is the sole property of Munim Mohibi</p></footer>
+        
+    <!--/******End wrapper******/-->    
+    </div>
+    <!-- Tried to write a function that would turn off the visibility of elements of class imageBoxText.  There were several other iterations of this code, however, this was the state of the function before submission.  As you can tell, the function does not function as desired.-->
+<script>
+	
+	var imageBoxContainerList = document.getElementsByClassName('imageBoxText');
+	
+	console.log(imageBoxContainerList.length);
+	for (var i=0;i<imageBoxContainerList.length;i++){
+		console.log(imageBoxContainerList[i]);
+		imageBoxContainerList[i].addEventListener(
+			'mouseover',
+			function(e){
+				console.log(this);
+				this.visibility = 'visible';
+				
+			}
+		);
+	}
+	/*
+	imageBoxContainerList.addEventListener('mouseover',function(){
+		for(var imBoxTxt in imageBoxContainerList){
+			console.log(imBoxTxt);
+			if(e.target && e.target.nodeName == 'DIV'){
+				console.log(imBoxTxt);
+			}
+		}
+	});
+	*/
+</script>
+</body>
+</html>

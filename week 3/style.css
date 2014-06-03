@@ -1,0 +1,94 @@
+@charset "utf-8";
+/******************/
+/* HTML tags here */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans+Condensed:300|Damion);
+html,body{margin:0 auto;padding:0;background-color:#ffb273;font-family:'PT Sans Narrow';height:100%;}
+header{
+	margin:0 auto;
+	padding: 0;
+}
+p{
+	margin:0 auto;
+}
+header h1{
+	margin:0 0 0 8px;
+	padding:0;
+	font-family:'Open Sans Condensed';
+	color:#ff9640; /*red*/
+}
+h5{
+	margin:0 auto;
+	padding:0;
+	
+}
+
+/****************/
+/* Classes here */
+.clearfix{clear:both}
+
+.wrapper{
+	width: 1024px;
+	padding: 0;
+	margin: 0 auto;
+	
+}
+div div div.imageBoxContainer:last-child{
+	padding-top:0px 4px 4px 4px;
+}
+.imageBoxContainer{
+	padding: 4px;
+	display: block;
+}
+
+.imageBox{
+	height: 246px;
+	width: 246px;
+	margin:4px;
+	padding:0;
+	display:block;
+	float:left;
+	position:relative;
+}
+.imageBox img{
+	position:absolute;
+	margin:0 auto;
+	padding:0;
+}
+div.imageBoxText:hover{
+	
+	visibility:visible;
+}
+div.imageBoxText{
+	width:246px;
+	margin-top:auto;
+	z-index:0;
+	background-color:rgba(61,61,61,.6);
+	position:absolute;
+	bottom:0;
+	visibility:visible;
+}
+
+
+/************/
+/* IDs here */
+#header{
+	width: 1024px;
+	background-color: #024e68;	/*purple*/
+}
+#header h2{
+	color:#ffb273;  /*light pink*/
+	margin:0 auto;
+	padding:0;
+	font-family:'Damion';
+	text-align:center;
+}
+#footer{
+	background-color:#fff273;
+}
+#footer p{
+	margin:0 auto;
+	text-align:center;
+}
+#main{
+	background-color:#62b4cf; /*purple*/	
+}
